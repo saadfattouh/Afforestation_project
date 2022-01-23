@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/secondary">
+
+    <TextView
+        android:id="@+id/quantity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/quantity"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="@string/enter_quantity"/>
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:tint="@color/main_color"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/quantity"
+        android:layout_alignEnd="@id/quantity"
+        android:background="#00000000"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/add"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="0"/>
+
+    <ImageButton
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_subtract"
+        android:tint="@color/main_color"
+        android:alpha="0.5"
+        android:layout_below="@id/quantity"
+        android:layout_alignStart="@id/quantity"
+        android:layout_alignEnd="@id/quantity"
+        android:background="#00000000"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/black"
+        android:alpha="0.6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/subtract"/>
+
+
+
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/divider"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/main_color"
+        android:text="@string/save"/>
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/save"
+        android:layout_below="@id/divider"
+        android:paddingBottom="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_color_2"
+        android:text="@string/cancel"/>
+</RelativeLayout>
